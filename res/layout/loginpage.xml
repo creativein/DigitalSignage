@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/tour_login_bg" >
+
+    <ImageView
+        android:id="@+id/ImageView01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/tour_login_bmt_logo" />
+
+    <AbsoluteLayout
+        android:id="@+id/LinearLayout01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tour_login_base1"
+        android:visibility="visible" >
+
+        <Button
+            android:id="@+id/btn_sign_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="275px"
+            android:layout_y="400px"
+            android:background="@drawable/tour_login_btn" />
+
+        <EditText
+            android:id="@+id/txt_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="275px"
+            android:layout_y="285px"
+            android:background="@drawable/tour_login_base1_user"
+            android:paddingLeft="20px"
+            android:singleLine="true"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/txt_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="275px"
+            android:layout_y="350px"
+            android:background="@drawable/tour_login_base1_pass"
+            android:paddingLeft="20px"
+            android:password="true"
+            android:singleLine="true"
+            android:textSize="18sp" />
+    </AbsoluteLayout>
+
+    <AbsoluteLayout
+        android:id="@+id/LinearLayout02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tour_login_base2"
+        android:visibility="visible" >
+
+        <Button
+            android:id="@+id/btn_tour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="600px"
+            android:layout_y="265px"
+            android:background="@drawable/tour_login_info_btn" />
+    </AbsoluteLayout>
+
+    <Button
+        android:id="@+id/btn_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="505px"
+        android:layout_y="205px"
+        android:background="@drawable/tour_login_close_btn" />
+
+    <ImageView
+        android:id="@+id/ImageView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tour_login_digi_sig" >
+    </ImageView>
+
+</AbsoluteLayout>

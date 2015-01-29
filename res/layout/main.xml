@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout01"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+<!-- android:background="@drawable/staticbackground" -->
+<VideoView
+	android:layout_height="265px"
+	android:layout_width="552px" 
+    android:id="@+id/videoviewsmall"
+    android:layout_gravity="center"
+    android:layout_y="145px"
+    android:layout_x="70px"
+    /> 
+    
+<TextView
+	 android:id="@+id/tagline"
+     android:layout_width="wrap_content" 
+     android:layout_height="wrap_content"
+     android:singleLine="true"            
+     android:layout_y="30px"
+     android:layout_x="70px"
+     android:textStyle="bold"
+     android:textSize="22px"    
+     android:textColor="#FF9900"
+     
+     />     
+<ImageView
+	 android:id="@+id/compLogo"
+     android:layout_width="200px" 
+     android:layout_height="70px"
+     android:singleLine="true"            
+     android:layout_y="15px"
+     android:layout_x="760px"
+	/>
+	
+<LinearLayout
+	android:layout_height="wrap_content" 
+	android:layout_width="wrap_content" 
+	/>		
+<TextView
+	 android:id="@+id/marqee"
+     android:layout_width="wrap_content" 
+     android:layout_height="wrap_content"
+     android:singleLine="true"            
+     android:layout_y="641px"
+     android:layout_x="105px"
+     android:textStyle="bold"
+     android:textSize="22px"    
+     android:textColor="#FF9900"
+     />
+     <!-- android:ellipsize="marquee" 
+      android:marqueeRepeatLimit ="marquee_forever"
+     android:scrollHorizontally="true"
+     android:focusableInTouchMode="true"  -->
+     <!-- Top window
+h-130
+w-256
+
+Bottom window
+h-297
+w-251 -->
+<TextView
+	android:id="@+id/compHead"
+	android:layout_width="248px"
+	android:layout_height="wrap_content"
+	android:layout_x="750px"
+	android:layout_y="150px"
+	android:gravity="center"
+	android:focusable="false"
+	android:textSize="22px"
+	android:textColor="#FFFFFF"
+	android:textStyle="bold"	
+	/>
+<TextView
+	android:id="@+id/compDescription"
+	android:layout_width="225px"
+	android:layout_height="280px"
+	android:layout_x="760px"
+	android:layout_y="270px"	
+	android:textSize="20px"
+	android:focusable="false"
+	android:textColor="#FFFFFF"
+	android:textStyle="bold"	
+	android:gravity="center"
+	android:lineSpacingExtra="1.5px"
+	/>
+	
+		<!-- clock date -->
+<LinearLayout 
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_x="100px"
+	android:layout_y="450px"	
+    >
+<LinearLayout 
+	android:paddingTop="0px"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+<TextView  
+	android:id="@+id/dateText"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:textSize="27sp"
+
+    />
+<DigitalClock 
+    android:id="@+id/dc"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:gravity="center" 
+    android:textSize="45sp"
+       />
+</LinearLayout>
+
+</LinearLayout>
+<AnalogClock
+	android:layout_x="515px"
+	android:layout_y="450px"	
+    android:layout_width="100px" 
+    android:layout_height="100px"
+    android:id="@+id/ALClock"
+
+    
+    />
+<!-- <?xml version="1.0" encoding="utf-8"?>
+<resources>
+ <dimen name="one_pixels">1px</dimen>
+ <dimen name="five_dp">5dp</dimen>
+ <dimen name="1_inch">1in</dimen>
+ <dimen name="1_cm">10mm</dimen>
+</resources> -->
+<!-- clock date ends-->
+</AbsoluteLayout>
