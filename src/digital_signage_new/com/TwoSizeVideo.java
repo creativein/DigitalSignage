@@ -398,8 +398,9 @@ public class TwoSizeVideo extends Activity implements SurfaceHolder.Callback,
 		Log.d("TwoSizeVideo", "jsonCompanyInfo");
 
 		Json1 jsonObj = new Json1();
-		arrJsonInfo = jsonObj.parseJsonData("http://bytmediacenter.com/"
-				+ "android/php/data.php?id=" + idForThisCompany
+		
+		arrJsonInfo = jsonObj.parseJsonData("http://www.boxmytv.com/"
+							+ "mytv/webservice/config.php?id=" + idForThisCompany
 				+ "&action=COMP");
 		companyInfoHead = new String[arrJsonInfo.length()];
 		companyInfoDescription = new String[arrJsonInfo.length()];
@@ -526,8 +527,8 @@ public class TwoSizeVideo extends Activity implements SurfaceHolder.Callback,
 
 		Json1 jsonObj = new Json1();
 		String tickerLink = "";
-		arrJson = jsonObj.parseJsonData("http://bytmediacenter.com/"
-				+ "android/php/data.php?id=" + idForThisCompany
+		arrJson = jsonObj.parseJsonData("http://www.boxmytv.com/"
+							+ "mytv/webservice/config.php?id=" + idForThisCompany
 				+ "&action=TICKER");
 		for (int j = 0; j < arrJson.length(); j++) {
 			JSONObject json_data;

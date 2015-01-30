@@ -162,9 +162,10 @@ public class SelectDownload extends Activity {
 			Json1 jsonObj = new Json1();
 			// arrJson =
 			// jsonObj.parseJsonData("http://bytmediacenter.com/android/php/data.php?id=8&action=VIDEO");
+			//http://www.boxmytv.com/mytv/webservice/config.php?id=8&action=VIDEO
 			arrJsonVideoLinks = jsonObj
-					.parseJsonData("http://bytmediacenter.com/"
-							+ "android/php/data.php?id="
+					.parseJsonData("http://www.boxmytv.com/"
+							+ "mytv/webservice/config.php?id="
 							+ idCompanySelectDownload + "&action=VIDEO");
 			url = new String[arrJsonVideoLinks.length()];
 			// videoMute=new Integer[arrJsonVideoLinks.length()];

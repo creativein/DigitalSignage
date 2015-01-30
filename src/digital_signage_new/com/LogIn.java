@@ -140,7 +140,7 @@ public class LogIn extends Activity implements OnFocusChangeListener {
 		Json1 jsonObj = new Json1();
 //		arrJson = jsonObj.parseJsonData("http://www.boxmytv.com/mytv/webservice/config.php?&un=" + userName + "&psw="
 //				+ password);
-		arrJson = jsonObj.parseJsonData("http://www.boxmytv.com/mytv/webservice/config.php?un=" + userName + "&psw="+ password+"&action=login");
+		arrJson = jsonObj.parseJsonData("http://www.boxmytv.com/mytv/webservice/config.php?un=" + userName + "&psw="+ password+"&action=LOGIN");
 		Log.d("json data", arrJson.toString());
 		 // http:bytmediacenter.com/android/php/data.php?action=UID&id=9
 		for (int j = 0; j < arrJson.length(); j++) {
